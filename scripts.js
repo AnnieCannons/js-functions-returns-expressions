@@ -11,7 +11,8 @@ console.log(sum);
 // Create a variable called largerSum. Assign it the return value from calling `addNumbers` with your own arguments. Choose arguments that will result in a larger number than the previous call (which put the return value in a variable called `sum`).
 
 
-
+const largerSum = addNumbers(10, 20);
+console.log(largerSum);
 
 
 /***********************  Exercise 2 ************************/
@@ -28,13 +29,19 @@ let user2 = {
   age: 27
 };
 
+
+
 // Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an imput.
 
 function greet(name) {
-  return // your code here
+  return console.log(`Welcome ${name}! We are glad you are here.`)
 }
 
+greet(user1.name);
+greet(user2.name);
+
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
+
 
 
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
@@ -49,10 +56,12 @@ function greet(name) {
 
 // Fill in the missing arguments and function body:
 
-function makeName() { // enter the arguments between the parenthesis
-  return // what should be returned?
+function makeName(firstname, lastname) {
+  value = (firstname + ' ' + lastname);
+  return console.log(value)
 }
 
+makeName("Rose", "Smith");
 
 // Call the function and store the value in a variable. 
 
@@ -61,15 +70,16 @@ function makeName() { // enter the arguments between the parenthesis
 
 /***********************  Exercise 4 ************************/
 
-function celsiusToFahrenheit(celsius) {
-  return (celsius * 9) / 5 + 32;
+function fahrenheittocelsius(number) {
+  return (5/9) * (number - 32);
 }
 
-const celsiusTemp = 25;
-const fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
-console.log("Temperature in Fahrenheit:", fahrenheitTemp);
+const fahrenheit = 75;
+const fahrenheitTemp = fahrenheittocelsius(fahrenheit);
+console.log("Temperature in Fahrenheit: ", fahrenheitTemp);
 
 // Change this code so that the user instead inputs fahrenheit and the function returns celsius. You will likely have to look up the conversion formula!
+
 
 // Call the function with different values.
 
@@ -82,11 +92,13 @@ let animals = ["monkey", "giraffe", "zebra", "rhino", "hippo"];
 
 // Write a function called "first" that takes an array as an argument and returns the first element.
 
-
+function first() {
+return arguments[0][0];
+}
 
 // Remove // -- from the below lines to test (VS Code can toggle comments on a line with Command-/).
-// console.log("The first animal should be monkey:", first(animals));
-// console.log("The first number should be 15:", first([15, 5, 23, 30]));
+console.log("The first animal should be monkey:", first(animals));
+console.log("The first number should be 15:", first([15, 5, 23, 30]));
 
 
 
