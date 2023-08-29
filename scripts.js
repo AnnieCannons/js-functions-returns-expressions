@@ -8,9 +8,17 @@ function addNumbers(num1, num2) {
 const sum = addNumbers(5, 3);
 console.log(sum); 
 
-// Create a variable called largerSum and assign it the value of calling the addNumbers function with new arguments. The result should be a number larger than the value of the variable, sum.
+// Create a variable called largerSum 
+//and assign it the value of calling the addNumbers function 
+//with new arguments. 
+//The result should be a number larger than the value of the variable, sum.
 
+// Create a variable called largerSum. 
+//Assign it the return value from calling `addNumbers` with your own arguments. 
+//Choose arguments that will result in a larger number than the previous call (which put the return value in a variable called `sum`).
 
+const largerSum = addNumbers(23, 17);
+console.log(largerSum);
 
 
 
@@ -28,19 +36,21 @@ let user2 = {
   age: 27
 };
 
-// Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an imput.
+// Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an input.
 
 function greet(name) {
-  return // your code here
+  return console.log(`Welcome ${name}! We are glad you are here. `)
 }
 
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
-
+greet(user1.name);
 
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
+greet(user2.name);
 
 // Check both variables in the console. (With a console.log call or by evaluating the values directly in the console.)
-
+console.log(greet(user1.name));
+console.log(greet(user2.name));
 
 
 /***********************  Exercise 3 ************************/
@@ -49,15 +59,13 @@ function greet(name) {
 
 // Fill in the missing arguments and function body:
 
-function makeName() { // enter the arguments between the parenthesis
-  return // what should be returned?
+function makeName(firstName, lastName) { // enter the arguments between the parenthesis
+  let fullName = firstName + " " + lastName;
+  return console.log(fullName);// what should be returned?
 }
 
-
 // Call the function and store the value in a variable. 
-
-
-
+makeName("Rose", "Smith");
 
 /***********************  Exercise 4 ************************/
 
