@@ -69,16 +69,22 @@ makeName("Rose", "Smith");
 
 /***********************  Exercise 4 ************************/
 
-function celsiusToFahrenheit(celsius) {
-  return (celsius * 9) / 5 + 32;
-}
+// function celsiusToFahrenheit(celsius) {
+//   return (celsius * 9) / 5 + 32;
+// }
 
-const celsiusTemp = 25;
-const fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
-console.log("Temperature in Fahrenheit:", fahrenheitTemp);
+// const celsiusTemp = 25;
+// const fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
+// console.log("Temperature in Fahrenheit:", fahrenheitTemp);
 
 // Change this code so that the user instead inputs fahrenheit and the function returns celsius. You will likely have to look up the conversion formula!
+function fahrenheitToCelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5/9;
+}
 
+let fahrenheitTemp = prompt("Please enter a temperature in fahrenheit you would like to convert to celsius: ");
+let celsiusTemp = fahrenheitToCelsius(fahrenheitTemp);
+console.log("Temperature in celsius: ", celsiusTemp)
 // Call the function with different values.
 
 // Have you changed the name of the function and the name of the parameter? If not, do it now!
@@ -90,11 +96,13 @@ let animals = ["monkey", "giraffe", "zebra", "rhino", "hippo"];
 
 // Write a function called "first" that takes an array as an argument and returns the first element.
 
-
+function first(array) {
+  return array [0];
+};
 
 // Remove // -- from the below lines to test (VS Code can toggle comments on a line with Command-/).
-// console.log("The first animal should be monkey:", first(animals));
-// console.log("The first number should be 15:", first([15, 5, 23, 30]));
+console.log("The first animal should be monkey:", first(animals));
+console.log("The first number should be 15:", first([15, 5, 23, 30]));
 
 
 
