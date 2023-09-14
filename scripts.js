@@ -39,11 +39,12 @@ let user2 = {
 // Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an input.
 
 function greet(name) {
-  return console.log(`Welcome ${name}! We are glad you are here. `)
+  return (`Welcome ${name}! We are glad you are here. `)
 }
 
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
 greet(user1.name);
+
 
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
 greet(user2.name);
