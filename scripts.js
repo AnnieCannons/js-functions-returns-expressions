@@ -62,7 +62,7 @@ console.log(greet(user2.name));
 
 function makeName(firstName, lastName) { // enter the arguments between the parenthesis
   let fullName = firstName + " " + lastName;
-  return console.log(fullName);// what should be returned?
+  return(fullName);// what should be returned?
 }
 
 // Call the function and store the value in a variable. 
