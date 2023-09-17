@@ -31,18 +31,19 @@ let user2 = {
 
 
 
-// Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an imput.
+// Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an input.
 
-function greet(name) {
-  return console.log(`Welcome ${name}! We are glad you are here.`)
+function greet(user) {
+  return (`Welcome ${user.name}! We are glad you are here.`)
 }
 
-greet(user1.name);
-greet(user2.name);
+hello = greet(user1);
+helloAgain = greet(user2);
 
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
 
-
+console.log(helloAgain)
+console.log(hello)
 
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
 
@@ -52,16 +53,17 @@ greet(user2.name);
 
 /***********************  Exercise 3 ************************/
 // The function below, "makeName", should take a first name and last name as arguments, and return the first name and last name separated by a space:
-// e.g. makeName("Rose", "Smith") => "Rose Smith"
+// e.g. makeName("Rose" "Smith") => "Rose Smith"
 
 // Fill in the missing arguments and function body:
 
-function makeName(firstname, lastname) {
-  value = (firstname + ' ' + lastname);
-  return console.log(value)
+function makeName(first, last) {
+return (`${first}, ${last}`);
 }
 
-makeName("Rose", "Smith");
+let finalName = makeName('Rose', 'Smith');
+
+console.log(finalName)
 
 // Call the function and store the value in a variable. 
 
@@ -92,13 +94,15 @@ let animals = ["monkey", "giraffe", "zebra", "rhino", "hippo"];
 
 // Write a function called "first" that takes an array as an argument and returns the first element.
 
-function first() {
-return arguments[0][0];
+function first(array) {
+return array[0];
 }
 
 // Remove // -- from the below lines to test (VS Code can toggle comments on a line with Command-/).
 console.log("The first animal should be monkey:", first(animals));
-console.log("The first number should be 15:", first([15, 5, 23, 30]));
+
+let number5 = [15, 5, 23, 30]
+console.log("The first number should be 15:", first(number5));
 
 
 

@@ -1,20 +1,22 @@
-Exercise 1 looks gerat
+// Exercise 1 looks great
 
-Exercise 2
-What is line 37 doing?
-  return console.log(`Welcome ${name}! We are glad you are here.`)
-What is the difference between a return and a console.log?
+// Exercise 2
+// What is line 37 doing?
+//   return console.log(`Welcome ${name}! We are glad you are here.`)
+// What is the difference between a return and a console.log?
 
-Exercise 3
-Be sure to use a variable declaration keyword (like let or const) when creating a variable
+//ah ok I understand, its kind of redundant - return says to bring back the variable written after it and says to stop running any other code written before it
 
-Exercise 4 looks good
+// Exercise 3
+// Be sure to use a variable declaration keyword (like let or const) when creating a variable
 
-Exercise 5
-Take a look at the function you created.
-function first() {
-return arguments[0][0];
-}
-Does it take in parameters? Where is the arguments keyword coming from?
-How would you call this function with a different array of animals?
+// Exercise 4 looks good
+
+// Exercise 5
+// Take a look at the function you created.
+// function first() {
+// return arguments[0][0];
+// }
+// Does it take in parameters? Where is the arguments keyword coming from?
+// How would you call this function with a different array of animals?
 
