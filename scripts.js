@@ -8,7 +8,38 @@ function addNumbers(num1, num2) {
 const sum = addNumbers(5, 3);
 console.log(sum); 
 
-// Create a variable called largerSum. Assign it the return value from calling `addNumbers` with your own arguments. Choose arguments that will result in a larger number than the previous call (which put the return value in a variable called `sum`).
+
+
+
+
+// Create a variable called largerSum. Assign it the return value from calling
+//  `addNumbers` with your own arguments. Choose arguments that will result in a 
+// larger number than the previous call (which put the return value in a variable called `sum`).
+
+const largerSum = addNumbers (770,7);
+console.log(largerSum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -28,33 +59,92 @@ let user2 = {
   age: 27
 };
 
-// Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an imput.
-
+// Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an input.
 function greet(name) {
-  return // your code here
+  return (`Welcome ${name}! We are glad you are here.`)
 }
 
+
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
+greet(user1.name);
+
 
 
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
+greet(user2.name)
+
+
 
 // Check both variables in the console. (With a console.log call or by evaluating the values directly in the console.)
+console.log((greet(user1.name)));
+console.log((greet(user2.name)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /***********************  Exercise 3 ************************/
-// The function below, "makeName", should take a first name and last name as arguments, and return the first name and last name separated by a space:
+
+
+
+
+
+// The function below, "makeName", should take a first name and last name as arguments,
+//  and return the first name and last name separated by a space:
+
 // e.g. makeName("Rose", "Smith") => "Rose Smith"
 
-// Fill in the missing arguments and function body:
 
-function makeName() { // enter the arguments between the parenthesis
-  return // what should be returned?
+// Fill in the missing arguments and function body:
+function makeName(firstName, lastName) {
+  return `${firstName} ${lastName}`;
 }
 
 
+
+
 // Call the function and store the value in a variable. 
+const nAme = makeName("Rose", "Smith");
+console.log(nAme);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -69,11 +159,42 @@ const celsiusTemp = 25;
 const fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
 console.log("Temperature in Fahrenheit:", fahrenheitTemp);
 
-// Change this code so that the user instead inputs fahrenheit and the function returns celsius. You will likely have to look up the conversion formula!
+// Change this code so that the user instead inputs fahrenheit and the 
+// function returns celsius. You will likely have to look up the conversion formula!
+function fahrenheitToCelsius (fahrenheit) {
+  return (fahrenheit - 32) * 5/9;
+}
 
 // Call the function with different values.
+const fahrenheitTemp1 = 77;
+const fahrenheitTemp2 = 115; 
+const celsiusTemp1 = fahrenheitToCelsius(fahrenheitTemp1);
+const celsiusTemp2 = fahrenheitToCelsius(fahrenheitTemp2);
+
 
 // Have you changed the name of the function and the name of the parameter? If not, do it now!
+console.log("Temperature in Celsius (77°F):", celsiusTemp1);
+console.log("Temperature in Celsius (212°F):", celsiusTemp2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /***********************  Exercise 5 ************************/
@@ -81,16 +202,50 @@ console.log("Temperature in Fahrenheit:", fahrenheitTemp);
 let animals = ["monkey", "giraffe", "zebra", "rhino", "hippo"];
 
 // Write a function called "first" that takes an array as an argument and returns the first element.
-
+function first (array) {
+  return array[0];
+};
 
 
 // Remove // -- from the below lines to test (VS Code can toggle comments on a line with Command-/).
-// console.log("The first animal should be monkey:", first(animals));
-// console.log("The first number should be 15:", first([15, 5, 23, 30]));
+console.log("The first animal should be a Monkey:", first(animals));
+console.log("The first number should be 15:", first([15, 5, 23, 30]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /***********************  BONUS PRACTICE  ************************/
+
+
+
+
+
 
 
 
@@ -111,6 +266,12 @@ let animals = ["monkey", "giraffe", "zebra", "rhino", "hippo"];
 
 
 
+
+
+
+
+
+
 /***********************  Exercise 7 ************************/
 
 // Convert the following function declaration into a function expression. 
@@ -121,6 +282,13 @@ function square(num) {
 
 console.log(square(5)); // Expected output: 25
 console.log(square(7)); // Expected output: 49
+
+
+
+
+
+
+
 
 
 
