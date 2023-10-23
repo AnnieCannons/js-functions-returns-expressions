@@ -37,10 +37,12 @@ function greet(name) {
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
 
 console.log(greet(user1));
+greet(user1);
 
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
 
 console.log(greet(user2));
+greet(user2);
 
 // Check both variables in the console. (With a console.log call or by evaluating the values directly in the console.)
 
