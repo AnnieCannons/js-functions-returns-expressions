@@ -32,15 +32,20 @@ let user2 = {
 // Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an imput.
 
 function greet(name) {
-  return // your code here;`Welcome \${user.name}! We are glad you are here.`;
+  return `Welcome ${Dorcus}! We are glad you are here.`;
 }
 
 
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
 
-
+function greet(user) {
+  return `Welcome ${Rose.Smith}! We are glad you are here.`;
+}
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
 
+function greet(user) {
+  return `Welcome ${Tabitha.Daniels}! We are glad you are here.`;
+}
 // Check both variables in the console. (With a console.log call or by evaluating the values directly in the console.)
 
 const greeting1 = greet(user1);
@@ -55,9 +60,9 @@ console.log(greeting2);
 
 // Fill in the missing arguments and function body:
 
-function makeName() { // enter the arguments between the parenthesis
-  return // what should be returned?`\${lastName}`;
-} console.log(fullName);
+function makeName(firstName, lastName) {
+  return `${firstName} ${lastName}`;
+}
 
 
 // Call the function and store the value in a variable. 
@@ -151,8 +156,8 @@ function square(num) {
   return num * num;
 };
 
-console.log(square(5)); // Expected output: 25
-console.log(square(7)); // Expected output: 49
+console.log(square(5)); 
+console.log(square(7)); 
 
 
 
