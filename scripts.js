@@ -11,7 +11,8 @@ console.log(sum);
 // Create a variable called largerSum. Assign it the return value from calling `addNumbers` with your own arguments. Choose arguments that will result in a larger number than the previous call (which put the return value in a variable called `sum`).
 
 
-
+const largerSum = addNumbers(10, 20);
+console.log(largerSum);
 
 
 /***********************  Exercise 2 ************************/
@@ -31,17 +32,18 @@ let user2 = {
 // Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an imput.
 
 function greet(name) {
-  return // your code here
+  return `Welcome ${name}! We are glad you are here.`;
 }
 
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
-
+const greeting1 = greet(user1.name);
 
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
+const greeting2 = greet(user2.name);
 
 // Check both variables in the console. (With a console.log call or by evaluating the values directly in the console.)
-
-
+console.log(greeting1);
+console.log(greeting2);
 
 /***********************  Exercise 3 ************************/
 // The function below, "makeName", should take a first name and last name as arguments, and return the first name and last name separated by a space:
@@ -49,14 +51,16 @@ function greet(name) {
 
 // Fill in the missing arguments and function body:
 
-function makeName() { // enter the arguments between the parenthesis
-  return // what should be returned?
+function makeName(firstName, lastName) {
+  return `${firstName} ${lastName}`;
 }
 
 
 // Call the function and store the value in a variable. 
 
 
+const fullName = makeName('John', 'Doe');
+console.log(fullName);
 
 
 /***********************  Exercise 4 ************************/
@@ -65,16 +69,22 @@ function celsiusToFahrenheit(celsius) {
   return (celsius * 9) / 5 + 32;
 }
 
-const celsiusTemp = 25;
-const fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
+//const celsiusTemp = 25;
+//const fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
 console.log("Temperature in Fahrenheit:", fahrenheitTemp);
 
 // Change this code so that the user instead inputs fahrenheit and the function returns celsius. You will likely have to look up the conversion formula!
+function fahrenheitToCelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5 / 9;
+}
 
 // Call the function with different values.
 
 // Have you changed the name of the function and the name of the parameter? If not, do it now!
 
+const fahrenheitTemp = 77;
+const celsiusTemp = fahrenheitToCelsius(fahrenheitTemp);
+console.log("Temperature in Celsius:", celsiusTemp);
 
 /***********************  Exercise 5 ************************/
 
@@ -88,6 +98,12 @@ let animals = ["monkey", "giraffe", "zebra", "rhino", "hippo"];
 // console.log("The first animal should be monkey:", first(animals));
 // console.log("The first number should be 15:", first([15, 5, 23, 30]));
 
+function first(arr) {
+  return arr[0];
+}
+
+console.log("The first animal should be monkey:", first(["monkey", "giraffe", "zebra", "rhino", "hippo"]));
+console.log("The first number should be 15:", first([15, 5, 23, 30]));
 
 
 /***********************  BONUS PRACTICE  ************************/
@@ -98,16 +114,28 @@ let animals = ["monkey", "giraffe", "zebra", "rhino", "hippo"];
 
 // Declare a function "makeBio" that takes a "user" object as an argument and returns a minimal bio/profile sentence about the user. You can decide what properties a person has that might make a good bio sentence!
 
-
+function makeBio(user) {
+  return `This is \${user.name}, a \${user.age} year old who is a programmer: \${user.programmer}`;
+}
 
 
 // Then make two example objects called `user3` and `user4`.
+let user3 = {
+  name: 'Alice Johnson',
+  programmer: false,
+  age: 35
+};
 
+let user4 = {
+  name: 'Bob Williams',
+  programmer: true,
+  age: 40
+};
 
 
 // Finally, uncomment the following two lines to test your function!
-// console.log("Your bio is:", makeBio(user3));
-// console.log("Your bio is:", makeBio(user4));
+ console.log("Your bio is:", makeBio(user3));
+console.log("Your bio is:", makeBio(user4));
 
 
 
@@ -119,8 +147,8 @@ function square(num) {
   return num * num;
 };
 
-console.log(square(5)); // Expected output: 25
-console.log(square(7)); // Expected output: 49
+console.log(square(5)); 
+console.log(square(7)); 
 
 
 
@@ -131,4 +159,7 @@ console.log(square(7)); // Expected output: 49
 const formatName = function(firstName, lastName) {
   return `${lastName}, ${firstName}`;
 };
+
+console.log(formatName('John', 'Doe'));
+console.log(formatName('Jane', 'Doe'));
 
