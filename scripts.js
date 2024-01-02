@@ -32,25 +32,16 @@ let user2 = {
 // Complete the function "greet" so that it returns the string "Welcome [NAME]! We are glad you are here." The function should be able to have user1 or user2 as an imput.
 
 function greet(name) {
-  return `Welcome ${Dorcus}! We are glad you are here.`;
+  return `Welcome ${name}! We are glad you are here.`;
 }
-
 
 // Call the function so that "Welcome Rose Smith! We are glad you are here." is returned from the function and stored in a variable. 
+const greeting1 = greet(user1.name);
 
-function greet(user) {
-  return `Welcome ${Rose.Smith}! We are glad you are here.`;
-}
 // Call the function so that "Welcome Tabitha Daniels!  We are glad you are here." is returned from the function and stored in a variable.
+const greeting2 = greet(user2.name);
 
-function greet(user) {
-  return `Welcome ${Tabitha.Daniels}! We are glad you are here.`;
-}
 // Check both variables in the console. (With a console.log call or by evaluating the values directly in the console.)
-
-const greeting1 = greet(user1);
-const greeting2 = greet(user2);
-
 console.log(greeting1);
 console.log(greeting2);
 
